@@ -142,3 +142,18 @@ let view = [[null,obj1,obj2,obj3],
                         }
                     }
                 } console.log(total)
+
+const divide = function(x,y,z){
+    let max = 0
+    let numbers = [x,y,z]
+    for (let index = 0; index < numbers.length; index++) {
+         if (numbers[index] > numbers)max = numbers 
+         for (let index = 0; index < numbers.length; index++) {
+           if(max % 2 == 0 && numbers % 2 == 0)return numbers
+            
+         }
+        
+    }
+
+};
+console.log(divide(2,6,8))
