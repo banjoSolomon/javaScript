@@ -165,10 +165,35 @@
 // console.log(answer)
 //combine both filter and map
 
-let array = [1,2,3,4,5,6]
-let answers = array.filter(num=> num % 2 == 0).map(num => num * 10)
-console.log(answers)
-            
+// let array = [1,2,3,4,5,6]
+// let answers = array.filter(num=> num % 2 == 0).map(num => num * 10)
+// console.log(answers)
+  
+ 
+const studentScores = [95, 78, 85, 60, 45, 92];
+
+const getLetterGrade = (score) => {
+    if (score >= 90) {
+        return 'A';
+    } else if (score >= 80) {
+        return 'B';
+    } else if (score >= 70) {
+        return 'C';
+    } else if (score >= 60) {
+        return 'D';
+    } else {
+        return 'F';
+    }
+};
+
+const studentGrades = studentScores.map(score => getLetterGrade(score));
+
+console.log(studentGrades);
+
+module.exports = getLetterGrade;
+
+
+const = 
             
         
     

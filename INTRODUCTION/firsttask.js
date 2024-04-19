@@ -107,7 +107,7 @@ function greetings(greet){
     }
     console.log(greetings("Good morning!")("John"))
 
-    let
+ 
     
 
 
