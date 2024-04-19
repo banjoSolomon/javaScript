@@ -66,91 +66,108 @@
 //}
 
 
- var obj1 ={
-     name: "Solomon",
-     population: 300,
-     temprature: 12,
-     currency: "Male"
- }
+//  var obj1 ={
+//      name: "Solomon",
+//      population: 300,
+//      temprature: 12,
+//      currency: "Male"
+//  }
 
- var obj2 ={
-    name: "Alex",
-    population: 100,
-    temprature: 11,
-    currency: "doller"
-}
-var obj3 ={
-    name: "Sam",
-    population: 500,
-    temprature: 9,
-    currency: "doller"
-}
+//  var obj2 ={
+//     name: "Alex",
+//     population: 100,
+//     temprature: 11,
+//     currency: "doller"
+// }
+// var obj3 ={
+//     name: "Sam",
+//     population: 500,
+//     temprature: 9,
+//     currency: "doller"
+// }
 
  
-var obj4 ={
-    name: "Ola",
-    population: 420,
-    temprature: 5,
-    currency: "doller"
-}
+// var obj4 ={
+//     name: "Ola",
+//     population: 420,
+//     temprature: 5,
+//     currency: "doller"
+// }
  
-var obj5 ={
-    name: "See",
-    population: 70,
-    temprature: 18,
-    currency: "doller"
-}
+// var obj5 ={
+//     name: "See",
+//     population: 70,
+//     temprature: 18,
+//     currency: "doller"
+// }
 
-var obj6 ={
-    name: "Ben",
-    population: 300,
-    temprature: 12,
-    currency: "doller"
-}
+// var obj6 ={
+//     name: "Ben",
+//     population: 300,
+//     temprature: 12,
+//     currency: "doller"
+// }
 
 
-var obj7 ={
-    name: "Perker",
-    population: 250,
-    temprature: 8,
-    currency: "doller"
-}
+// var obj7 ={
+//     name: "Perker",
+//     population: 250,
+//     temprature: 8,
+//     currency: "doller"
+// }
 
-var obj8 ={
-    name: "Mav",
-    population: 150,
-    temprature: 3,
-    currency: "doller"
-}
+// var obj8 ={
+//     name: "Mav",
+//     population: 150,
+//     temprature: 3,
+//     currency: "doller"
+// }
 
-var obj9 ={
-    name: "Dope",
-    population: 200,
-   temprature: 12,
-    currency: "doller"
-}
+// var obj9 ={
+//     name: "Dope",
+//     population: 200,
+//    temprature: 12,
+//     currency: "doller"
+// }
 
-let view = [[null,obj1,obj2,obj3],
-            [obj4,obj5,obj6,null],
-            [obj7,null,obj8,obj9],
-            ]
-          let total = 0
-                for(let index in view){
-                    for(let key in index){
-                        if(view[index][key] != null && view[index][key].temprature >=10){
-                            total += view[index][key].population
-                        }
-                    }
-                } console.log(total)
+// let view = [[null,obj1,obj2,obj3],
+//             [obj4,obj5,obj6,null],
+//             [obj7,null,obj8,obj9],
+//             ]
+//           let total = 0
+//                 for(let index in view){
+//                     for(let key in index){
+//                         if(view[index][key] != null && view[index][key].temprature >=10){
+//                             total += view[index][key].population
+//                         }
+//                     }
+//                 } console.log(total)
                 
                
-            for(let index = 0; index < view.length; index++){
-                for(let inner = 0; inner <  view[index] ; inner++){
-                    if(view[index][inner] != null && view[index][inner] >=10){
-                        console.log(view[index][inner]);
-                    }
-                }
-            }
+//             for(let index = 0; index < view.length; index++){
+//                 for(let inner = 0; inner <  view[index] ; inner++){
+//                     if(view[index][inner] != null && view[index][inner] >=10){
+//                         console.log(view[index][inner]);
+//                     }
+//                 }
+//             }
+
+//forEach lamdam
+// let array = [1,2,3,4,5,6]
+// let arr = [];
+// let answer =array.forEach((num)=>{arr.push(num * 2);})
+// console.log(arr)
+
+//Mapping into the array
+// let array = [1,2,3,4,5,6]
+// let arr = []
+// let answer = array.map((num)=> num * 2)
+// console.log(answer)
+//combine both filter and map
+
+let array = [1,2,3,4,5,6]
+let answers = array.filter(num=> num % 2 == 0).map(num => num * 10)
+console.log(answers)
             
             
         
