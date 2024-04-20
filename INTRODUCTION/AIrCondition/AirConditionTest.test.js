@@ -23,14 +23,13 @@ test("Increase temperature by 1 degree", () => {
 });
 
 test("Ac can increase temprature", ()=>{
-    turnOffAc(); // Ensure AC is turned off
-    turnOnAc(); // Turn on AC
-    const initialTemperature = getCurrentTemperature(); // Get initial temperature
+    turnOffAc(); 
+    turnOnAc();
+    const initialTemperature = getCurrentTemperature(); 
     
-    // Attempt to increase temperature
-    const isIncreased = increaseTemperature(); // Try to increase temperature
-    expect(isIncreased).toBe(true); // Expect increase to succee
-    const newTemperature = getCurrentTemperature(); // Get current temperature
+    const isIncreased = increaseTemperature(); 
+    expect(isIncreased).toBe(true); 
+    const newTemperature = getCurrentTemperature(); 
     expect(newTemperature).toBe(initialTemperature + 1);; 
 
 });
