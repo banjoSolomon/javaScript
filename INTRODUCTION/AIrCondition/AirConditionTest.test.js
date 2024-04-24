@@ -24,10 +24,17 @@ test("Increase temperature by 1 degree", () => {
 
 test("Ac can increase temprature", ()=>{
     turnOffAc(); 
+<<<<<<< HEAD
     turnOnAc();
     const initialTemperature = getCurrentTemperature(); 
     
   
+=======
+    turnOnAc(); 
+    const initialTemperature = getCurrentTemperature(); 
+    
+    
+>>>>>>> b888ea2e943e5fdb8e50355d98f41e8e6deb9217
     const isIncreased = increaseTemperature(); 
     expect(isIncreased).toBe(true); 
     const newTemperature = getCurrentTemperature(); 
