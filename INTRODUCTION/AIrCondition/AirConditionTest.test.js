@@ -27,6 +27,7 @@ test("Ac can increase temprature", ()=>{
     turnOnAc();
     const initialTemperature = getCurrentTemperature(); 
     
+  
     const isIncreased = increaseTemperature(); 
     expect(isIncreased).toBe(true); 
     const newTemperature = getCurrentTemperature(); 

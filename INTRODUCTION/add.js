@@ -29,6 +29,17 @@ function sortArrayWithMixedNumbers(myArray) {
    let zeroElements = myArray.filter(num => num === 0);
    return [...nonZeroElements, ...zeroElements];
 }
-module.exports = {addNumbers, evenNumbers, maximumProduct, sortArrayWithMixedNumbers};
+
+
+function toAddOneToTheLastIndex(numbers) {
+    let newNumbers = numbers.length + 1;
+    for (let count = 0; count < numbers.length; count++) {
+        newNumbers[count] = numbers[count];
+    }
+    newNumbers[numbers.length] = 1;
+    return newNumbers;
+
+}
+module.exports = {addNumbers, evenNumbers, maximumProduct, sortArrayWithMixedNumbers, toAddOneToTheLastIndex};
 
 

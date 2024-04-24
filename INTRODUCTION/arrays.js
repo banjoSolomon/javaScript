@@ -184,7 +184,11 @@ const getLetterGrade = (score) => {
     } else {
         return 'F';
     }
+
+
 };
+
+
 
 const studentGrades = studentScores.map(score => getLetterGrade(score));
 
@@ -193,7 +197,7 @@ console.log(studentGrades);
 module.exports = getLetterGrade;
 
 
-const = 
+
             
         
     

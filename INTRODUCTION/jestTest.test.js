@@ -1,4 +1,4 @@
-let {addNumbers, evenNumbers, maximumProduct, sortArrayWithMixedNumbers} = require("./add.js");
+let {addNumbers, evenNumbers, maximumProduct, sortArrayWithMixedNumbers,toAddOneToTheLastIndex} = require("./add.js");
 test("Add two numbers",()=>{
     let a = 3;
     let b = 5;
@@ -37,4 +37,10 @@ test('test sorting numbers', () =>{
     let answer = sortArrayWithMixedNumbers(arr)
     expect(answer).toEqual([3,2,-1,7,8,0,0])
 
+})
+
+test('test adding the index from the back', () =>{
+    let arr = [5,2,3,1,2]
+    let answer = toAddOneToTheLastIndex(arr);
+    expect(answer).toEqual([5,2,3,1,3])
 })
